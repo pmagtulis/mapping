@@ -8,7 +8,7 @@ degree in data journalism at Columbia Journalism School.
 
 # What this contains?
 
-This hosts a website containing all mapping projects for the course. The website can be accessed [here](https://pmagtulis.github.io/mapping/)
+This hosts a website containing all mapping projects for the course. The website can be accessed [here](https://pmagtulis.github.io/mapping/).
 
 In addition, the repository will host all materials involved in the creating each project.
 
