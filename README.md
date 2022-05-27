@@ -10,7 +10,7 @@ degree in data journalism at Columbia Journalism School.
 
 This hosts a website containing all mapping projects for the course. The website can be accessed [here](https://pmagtulis.github.io/mapping/).
 
-In addition, the repository will host all materials involved in the creating each project.
+Datasets used for outputs in this page are located in a separate repo. 
 
 # Contact
 
