@@ -14,4 +14,6 @@ Datasets used for outputs in this page are located in a separate repo.
 
 # Contact
 
-Prinz Magtulis, ppm2130@columbia.edu
+Prinz Magtulis, [ppm2130@columbia.edu](mailto:ppm2130@columbia.edu)
+
+**Comments and suggestions are always welcome! All rights reserved.**
