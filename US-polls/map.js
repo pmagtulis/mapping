@@ -27,7 +27,7 @@ map.on("load", function () {
       type: "fill",
       source: {
         type: "geojson",
-        data: "data/statesElections.geojson",
+        data: "US-polls/data/statesElections.geojson",
       },
       maxzoom: 6, 
       paint: {
@@ -57,7 +57,7 @@ map.on("load", function () {
           type: "line",
           source: {
             type: "geojson",
-            data: "data/countiesElections.geojson",
+            data: "US-polls/data/countiesElections.geojson",
           },
           minzoom: 6,
           paint: {
@@ -73,7 +73,7 @@ map.on("load", function () {
           type: "fill",
           source: {
             type: "geojson",
-            data: "data/countiesElections.geojson",
+            data: "US-polls/data/countiesElections.geojson",
           },
           minzoom: 6,
           paint: {
