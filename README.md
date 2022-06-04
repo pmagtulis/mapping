@@ -1,16 +1,17 @@
 # mapping
-Site and repository of cartography projects for Columbia Journalism School
+Homepage of cartography projects for Columbia Journalism School
 
 # What is this?
 
-This is a repository dedicated to projects for Points Unknown (Data Mapping) course in partial fulfillment of requirements for masters of science
-degree in data journalism at Columbia Journalism School.
+This is a repository dedicated to the homepage of my website for Points Unknown (Data Mapping) course in partial fulfillment of requirements for masters of 
+science degree in data journalism at Columbia Journalism School.
 
 # What this contains?
 
-This hosts a website containing all mapping projects for the course. The website can be accessed [here](https://pmagtulis.github.io/mapping/).
+This hosts the homepage of the website containing all links to mapping projects for the course. Data and webpages of specific projects are contained in 
+separate repositories though. The website's homepage can be accessed [here](https://pmagtulis.github.io/mapping/).
 
-Datasets used for outputs in this page are located in a separate repo [here](https://github.com/pmagtulis/data-mapping.git). 
+Meanwhile, datasets used for the projects in this page are located likewise in a separate repo [here](https://github.com/pmagtulis/data-mapping.git). 
 
 # Contact
 
