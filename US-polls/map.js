@@ -15,7 +15,7 @@ map.on("load", function () {
       type: "line",
       source: {
         type: "geojson",
-        data: "data/statesElections.geojson",
+        data: "US-polls/data/statesElections.geojson",
       },
       paint: {
         "line-color": "#ffffff",
