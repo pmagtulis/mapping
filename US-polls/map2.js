@@ -1,7 +1,7 @@
 var map2 = new mapboxgl.Map({
     container: 'map2',
     style: 'mapbox://styles/pmagtulis07/cl3ugxtww003514jzo7onkcj1',
-    zoom: 3,
+    zoom: 1,
     maxZoom: 9,
     minZoom: 3,
     center: [-96.23, 40.68],
@@ -15,7 +15,7 @@ map2.addLayer(
       type: "circle",
       source: {
         type: "geojson",
-        data: "https://github.com/data-mapping/US-polls/countiesPoints.geojson",
+        data: "data/countiesPoints.geojson",
       },
       paint: {
         'circle-radius':
@@ -59,7 +59,7 @@ map2.addLayer(
         type: "line",
         source: {
             type: "geojson",
-            data: "https://github.com/data-mapping/US-polls/statesElections.geojson",
+            data: "data/statesElections.geojson",
         },
         paint: {
             "line-color": "#ffffff",
@@ -74,7 +74,7 @@ map2.addLayer(
         type: "line",
         source: {
             type: "geojson",
-            data: "https://github.com/data-mapping/US-polls/countiesElections.geojson",
+            data: "data/countiesElections.geojson",
         },
         minzoom: 6,
         paint: {

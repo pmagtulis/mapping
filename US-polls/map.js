@@ -15,7 +15,7 @@ map.on("load", function () {
       type: "line",
       source: {
         type: "geojson",
-        data: "https://github.com/mapping/US-polls/statesElections.geojson",
+        data: "data/statesElections.geojson",
       },
       paint: {
         "line-color": "#ffffff",
@@ -27,7 +27,7 @@ map.on("load", function () {
       type: "fill",
       source: {
         type: "geojson",
-        data: "https://github.com/mapping/US-polls/statesElections.geojson",
+        data: "data/statesElections.geojson",
       },
       maxzoom: 6, 
       paint: {
@@ -57,7 +57,7 @@ map.on("load", function () {
           type: "line",
           source: {
             type: "geojson",
-            data: "https://github.com/mapping/US-polls/countiesElections.geojson",
+            data: "data/countiesElections.geojson",
           },
           minzoom: 6,
           paint: {
@@ -73,7 +73,7 @@ map.on("load", function () {
           type: "fill",
           source: {
             type: "geojson",
-            data: "https://github.com/mapping/US-polls/countiesElections.geojson",
+            data: "data/countiesElections.geojson",
           },
           minzoom: 6,
           paint: {
