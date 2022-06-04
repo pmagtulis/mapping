@@ -15,7 +15,7 @@ map2.addLayer(
       type: "circle",
       source: {
         type: "geojson",
-        data: "data/countiesPoints.geojson",
+        data: "https://github.com/data-mapping/US-polls/countiesPoints.geojson",
       },
       paint: {
         'circle-radius':
@@ -59,7 +59,7 @@ map2.addLayer(
         type: "line",
         source: {
             type: "geojson",
-            data: "data/statesElections.geojson",
+            data: "https://github.com/data-mapping/US-polls/statesElections.geojson",
         },
         paint: {
             "line-color": "#ffffff",
@@ -74,7 +74,7 @@ map2.addLayer(
         type: "line",
         source: {
             type: "geojson",
-            data: "data/countiesElections.geojson",
+            data: "https://github.com/data-mapping/US-polls/countiesElections.geojson",
         },
         minzoom: 6,
         paint: {

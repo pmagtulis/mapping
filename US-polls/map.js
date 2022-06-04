@@ -15,7 +15,7 @@ map.on("load", function () {
       type: "line",
       source: {
         type: "geojson",
-        data: "data/statesElections.geojson",
+        data: "https://github.com/mapping/US-polls/statesElections.geojson",
       },
       paint: {
         "line-color": "#ffffff",
@@ -27,7 +27,7 @@ map.on("load", function () {
       type: "fill",
       source: {
         type: "geojson",
-        data: "data/statesElections.geojson",
+        data: "https://github.com/mapping/US-polls/statesElections.geojson",
       },
       maxzoom: 6, 
       paint: {
@@ -57,7 +57,7 @@ map.on("load", function () {
           type: "line",
           source: {
             type: "geojson",
-            data: "data/countiesElections.geojson",
+            data: "https://github.com/mapping/US-polls/countiesElections.geojson",
           },
           minzoom: 6,
           paint: {
@@ -73,7 +73,7 @@ map.on("load", function () {
           type: "fill",
           source: {
             type: "geojson",
-            data: "data/countiesElections.geojson",
+            data: "https://github.com/mapping/US-polls/countiesElections.geojson",
           },
           minzoom: 6,
           paint: {
@@ -155,51 +155,3 @@ map.on('mouseenter', 'us_counties_elections', function () {
 map.on('mouseleave', 'us_counties_elections', function () {
     map.getCanvas().style.cursor = '';
 });
-
-map.addLayer(
-    {
-      id: "us_counties_centroids",
-      type: "circle",
-      source: {
-        type: "geojson",
-        data: "data/countiesPoints.geojson",
-      },
-      paint: {
-        "circle-radius": [
-          "max",
-          [
-            "/",
-            ["sqrt", ["abs", ["-", ["get", "Trump"], ["get", "Biden"]]]],
-            40,
-          ],
-          1,
-        ],
-        "circle-color": [
-          "match",
-          ["get", "Winner"],
-          "Donald J Trump",
-          "#cf635d",
-          "Joseph R Biden Jr",
-          "#6193c7",
-          "Other",
-          "#91b66e",
-          "#ffffff",
-        ],
-        "circle-stroke-color": "#ffffff",
-        "circle-stroke-width": 0.5,
-        "circle-opacity": [
-          "step",
-          ["get", "WnrPerc"],
-          0.3,
-          0.4,
-          0.5,
-          0.5,
-          0.7,
-          0.6,
-          0.9,
-        ],
-      },
-      minzoom: 3,
-    },
-    "waterway-label"
-  );
