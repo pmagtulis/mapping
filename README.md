@@ -11,8 +11,6 @@ science degree in data journalism at Columbia Journalism School.
 This hosts the homepage of the website containing all links to mapping projects for the course. Data and webpages of specific projects are contained in 
 separate repositories though. The website's homepage can be accessed [here](https://pmagtulis.github.io/mapping/).
 
-Meanwhile, datasets used for the projects in this page are located likewise in a separate repo [here](https://github.com/pmagtulis/data-mapping.git). 
-
 # Contact
 
 Prinz Magtulis, [ppm2130@columbia.edu](mailto:ppm2130@columbia.edu)
