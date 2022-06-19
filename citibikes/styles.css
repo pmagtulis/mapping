@@ -57,16 +57,16 @@ body {
 
 .legend-title {
 	background-color: #fff;
-	opacity: 50%;
+	opacity: 90%;
 	border-radius: 1em;
-	bottom: 50px;
+	bottom: 0px;
     right: 20px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-	line-height: 2.5em;
+	line-height: 2em;
 	padding: 1em 2em 0em;
 	position: absolute;
-	max-width: 25%;
-	margin: 0em 0em;
+	max-width: 35%;
+	margin: 10em 0em;
 	z-index: 100;
 }
 
@@ -104,4 +104,58 @@ body {
     margin-top:16px;
     background-color: grey;
     opacity: 0.5;
+  }
+
+  .share-btn-container a i {
+    font-size: 24px;
+    margin: 8px 0;
+    transition: 500ms;
+    padding: 8px;
+}
+
+  span  {
+    border-radius:50%;
+}
+
+.share-btn-container i:hover {
+  color: #485fc7;
+}
+
+.share-btn-container .fa-facebook {
+    color: #ffffff;
+}
+
+.share-btn-container .fa-twitter {
+    color: #ffffff;
+}
+
+.share-btn-container .fa-linkedin {
+    color: #ffffff;
+}
+
+.share-btn-container .fa-whatsapp {
+    color: #ffffff;
+}
+
+  .hidden { visibility: hidden; }
+
+  @media only screen and (max-width: 700px) {
+    .legend-title {
+      background-color: #ffffff;
+      opacity: 0.9;
+      border-radius: 0em;
+      top: -150px;
+      left: 20px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      line-height: 2em;
+      padding: 1em 2em 0em;
+      position: absolute;
+      max-width: 40%;
+      margin: 20em -1em;
+      z-index: 100;
+    }
+
+    .legend {
+      font-size: 12px;
+    }
   }
