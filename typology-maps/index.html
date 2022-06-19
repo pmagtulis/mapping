@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="https://pmagtulis.github.io/assets/ppm.ico" />
+    <title>Employment and police brutality</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <meta property="og:title" content="Employment and police brutality">
+	<meta property="og:description" content="Trial maps that show areas with low employment and cases of police brutality.">
+	<meta property="og:type" content="article">
+	<meta property="og:image" content="https://pmagtulis.github.io/assets/title-page.png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:creator" content="@prinzmagtulis">
+
+    <style>
+
+        html, body {
+          overflow-x: hidden;
+        }
+    
+        body {
+          position: relative;
+        }
+          
+          .footer {
+            padding:8px;
+            margin-top:12px;
+          }
+    
+          .section {
+            padding:3px;
+            margin-top:12px;
+          }
+
+	  .share-btn-container a i {
+		  font-size: 24px;
+          margin: 8px 0;
+		  transition: 500ms;
+          padding: 8px;
+	  }
+
+      .share-btn-container i:hover {
+		color: #485fc7;
+      }
+
+      .share-btn-container .fa-facebook {
+          color: #fff
+      }
+
+      .share-btn-container .fa-twitter {
+          color: #fff
+      }
+
+      .share-btn-container .fa-linkedin {
+          color: #fff
+      }
+
+      .share-btn-container .fa-whatsapp {
+          color: #fff
+      }
+    
+ </style>
+
+</head>
+
+<body>
+
+    <!-- nav bar -->
+	<nav class="navbar is-dark" role="navigation" aria-label="main navigation">
+		<div class="navbar-brand">
+		<div class="navbar-start">
+			<div class="navbar-item">
+			  <div class="share-btn-container">
+				<a href="#" class="facebook-btn">
+				  <i class="fab fa-facebook"></i>
+				</a>
+				<a href="#" class="twitter-btn">
+				  <i class="fab fa-twitter"></i>
+				</a>
+				<a href="#" class="linkedin-btn">
+				  <i class="fab fa-linkedin"></i>
+				</a>
+				<a href="#" class="whatsapp-btn">
+				  <i class="fab fa-whatsapp"></i>
+				</a>
+				</div>
+				</div>
+				</div>
+
+				<a class="navbar-burger" aria-label="menu" aria-expanded="false" id="burger">
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+					<span aria-hidden="true"></span>
+				  </a>
+				  </div>
+
+					<div class="navbar-menu" id="nav-links">
+						<div class="navbar-end">
+			  <a class="navbar-item" href="https://pmagtulis.github.io/mapping">
+				Back to homepage
+			  </a>
+			  </div>
+			</div>
+			  </nav>
+
+<!-- main -->  
+    <div class="container">
+    <section class="section">
+        <p class="title is-3 has-text-centered">Employment and police brutality</p>
+        <p class="has-text-centered"><em>Trial maps that show areas with low employment and cases of police brutality</em> </p>
+        <p class="has-text-centered"><em>June 4, 2022</em></p>
+    </div>
+
+<div class="container column is-half-desktop is-full-mobile is-full-tablet">
+    <div class="block">
+        <p class="mb-1 title is-5">Southern and eastern counties characterized as low employment areas</p>
+    <p class="mt-0 subtitle is-6">'Low employment' means that on average, less than 65% of residents aged 25-64 years old were employed in 2008-2012.</p>
+    </div>
+    <div id='map'></div>
+    </div>
+    <div class="container column is-half-desktop is-full-mobile is-full-tablet">
+    <div class="block">
+        <p class="subtitle is-6">Source: USDA</p>
+    </div>
+    <div class="block">
+        <p class="mb-1 title is-5">Police brutality in the US</p>
+    </div>
+    <div id='map2'></div>
+    <div class="container column is-full-desktop is-full-mobile is-full-tablet">
+        <div class="block">
+            <p class="subtitle is-6">Source: 2020pb.com</p>
+            </div>
+
+
+
+   <script type='text/javascript' src="map.js"></script>
+   <script type='text/javascript' src="map2.js"></script>
+  <script src="https://pmagtulis.github.io/mapping/socials.js"></script>
+	<script src="https://pmagtulis.github.io/mapping/mobile.js"></script>
+
+</body>
+
+<footer class="footer">
+    <div class="content has-text-centered">
+      <p>
+        Made using Bulma by <a href="mailto:ppm2130@columbia.edu">Prinz Magtulis</a>. Copyright 2022.
+      </p>
+    </div>
+</div>
+  </footer>
+</section>
+</html>
