@@ -36,7 +36,7 @@ body {
 	opacity: 0.9;
 	border-radius: 1em;
 	top: 50px;
-    left: 20px;
+  left: 20px;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 	line-height: 2.5em;
 	padding: 1em 2em 0em;
@@ -52,7 +52,7 @@ body {
 	height: 10px;
 	margin-left: 5px;
 	width: 10px;
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .legend {
@@ -107,4 +107,27 @@ body {
 
    .share-btn-container .fa-whatsapp {
     color: #fff
+  }
+
+  .hidden { visibility: hidden; }
+
+  @media only screen and (max-width: 700px) {
+    .legend-title {
+      background-color: #fff;
+      opacity: 0.9;
+      border-radius: 1em;
+      top: 50px;
+      left: 20px;
+      box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+      line-height: 2.5em;
+      padding: 1em 2em 0em;
+      position: absolute;
+      max-width: 60%;
+      margin: 0em 0em;
+      z-index: 100;
+    }
+
+    .legend {
+      font-size: 12px;
+    }
   }
