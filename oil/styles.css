@@ -74,14 +74,6 @@ body {
     width: 10px;
   }
 
-  #single-line {
-    fill: none;
-		stroke-linejoin: round;
-    color: #ab00d6;
-		stroke-linecap: round;
-		stroke-width: 3;
-  }
-
   .share-btn-container a i {
     font-size: 24px;
     margin: 8px 0;
@@ -94,19 +86,19 @@ body {
   }
 
    .share-btn-container .fa-facebook {
-    color: #fff
+    color: #ffffff;
   }
 
    .share-btn-container .fa-twitter {
-    color: #fff
+    color: #ffffff;
   }
 
    .share-btn-container .fa-linkedin {
-    color: #fff
+    color: #ffffff;
   }
 
    .share-btn-container .fa-whatsapp {
-    color: #fff
+    color: #ffffff;
   }
 
   .hidden { visibility: hidden; }
