@@ -59,7 +59,7 @@ map.on('click', 'world_numbers', function (e) {
         .setLngLat(e.lngLat)
         .setHTML('<h2>'+ '<strong>' + countryName + '</strong>' + '</h2>'
             + '<h2>' + 'Income group:' + " " + incomeGroup + '</h2>'
-            +'<h1>' + '% of oil in energy production:' + " " + '<strong>' + oilAmount + '</strong>' + '</h1>')
+            +'<h1>' + '% of oil in energy production:' + " " + '<strong>' + oilAmount + '%' + '</strong>' + '</h1>')
         .addTo(map);
 });
 // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
