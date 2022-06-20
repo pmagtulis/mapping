@@ -1,7 +1,7 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoicG1hZ3R1bGlzMDciLCJhIjoiY2wzdTgyNzh0MjlqNjNjbTl4YWdyczE2aiJ9.OusPbpMc7Ue0YyVgHINiAA';
 var map = new mapboxgl.Map({
     container: 'map',
-    style: 'mapbox://styles/pmagtulis07/cl47r8lhp001014n747gw9ltk',
+    style: 'mapbox://styles/pmagtulis07/cl4bop9c5000d14qweqz24ghl',
     zoom: 1,
     maxZoom: 6,
     minZoom: 1,
