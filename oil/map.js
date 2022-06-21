@@ -33,21 +33,24 @@ map.on("load", function () {
       maxzoom: 5, 
       minzoom: 1,
       "paint": {
-        "fill-color": {
-            property: "oil_energy",
-            stops: [[0, '#f2e926'],
-                    [16, '#efd124'],
-                    [31, '#ebb822'],
-                    [46, '#e8a01f'],
-                    [61, '#e5871d'],
-                    [76, '#e16f1b'],
-                    [91, '#d72514']]
-        }
+        "fill-color": [
+          "match",
+          ["get", "percentiles"],
+          "0-10", "#f2e926",
+          "11-20", "#efd124",
+          "21-30", "#ebb822",
+          "31-40", "#e8a01f",
+          "41-50", "#e5871d",
+          "51-60", "#e16f1b",
+          "61-70", "#de5619",
+          "71-80", "#db3e16",
+          "81-90", "#f63f03",
+          "91-100", "#d72514",
+          "#ffffff",
+        ],
     }
     }, "waterway-label");
   });
-
-  
 
 
 // Create the popup
@@ -57,9 +60,9 @@ map.on('click', 'world_numbers', function (e) {
     var incomeGroup = e.features[0].properties.income_grp;
     new mapboxgl.Popup()
         .setLngLat(e.lngLat)
-        .setHTML('<h2>'+ '<strong>' + countryName + '</strong>' + '</h2>'
+        .setHTML('<h1>'+ '<strong>' + countryName + '</strong>' + '</h1>'
             + '<h2>' + 'Income group:' + " " + incomeGroup + '</h2>'
-            +'<h1>' + '% of oil in energy production:' + " " + '<strong>' + oilAmount + '%' + '</strong>' + '</h1>')
+            +'<h2>' + '% of oil in energy production:' + " " + '<strong>' + oilAmount + '%' + '</strong>' + '</h2>')
         .addTo(map);
 });
 // Change the cursor to a pointer when the mouse is over the us_states_elections layer.
