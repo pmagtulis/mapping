@@ -1,13 +1,13 @@
 mapboxgl.accessToken = 'pk.eyJ1IjoicG1hZ3R1bGlzMDciLCJhIjoiY2wzdTgyNzh0MjlqNjNjbTl4YWdyczE2aiJ9.OusPbpMc7Ue0YyVgHINiAA';
 const bounds = [
-  [-95.5, 31.1], // Southwest coordinates
-  [-98.1, 32.5] // Northeast coordinates
+  [-106.52384311422753, 26.336565113655656], // Southwest coordinates
+  [-92.93354123119515, 36.694146838114285] // Northeast coordinates
   ];
 var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/pmagtulis07/cl4bop9c5000d14qweqz24ghl',
     zoom: 5,
-    maxZoom: 7,
+    maxZoom: 8,
     minZoom: 5,
     center: [-97.854, 32.103],
     projection:'albers',
@@ -35,7 +35,7 @@ map.on("load", function () {
         type: "geojson",
         data: "https://raw.githubusercontent.com/pmagtulis/mapping/main/wildfires/data/countiesWildfire.geojson",
       },
-      maxzoom: 7, 
+      maxzoom: 8, 
       minzoom: 5,
       "paint": {
         "fill-color": [
